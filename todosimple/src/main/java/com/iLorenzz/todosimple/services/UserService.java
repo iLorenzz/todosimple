@@ -46,7 +46,7 @@ public class UserService {
         try {
             this.userRepository.deleteById(id);
         } catch (Exception e) {
-            throw new RuntimeException("Can't delete related entities");
+            throw new RuntimeException("Can't delete related entities!");
         }
     }
 }
